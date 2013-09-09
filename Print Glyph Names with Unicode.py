@@ -23,8 +23,8 @@ for i in ordered:
     if i in selected:
         og += "'" + i+ "', "
 
-print 'This is the unicode selected list'
+print 'This is the selected unicode list'
 print g[:-2]
-print 'This is your ordered selected list'
+print 'This is the selected ordered list'
 print og[:-2]
 print 'Digested by Python.'
