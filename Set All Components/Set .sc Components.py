@@ -3,8 +3,8 @@ height = 20
 
 
 f = CurrentFont()
-lowercase = ['acute', 'grave', 'hungarumlaut', 'doublegrave', 'circumflex', 'caron', 'dieresis', 'tilde', 'ring', 'macron', 'breve', 'invertedbreve', 'dotaccent', 'linebelow', 'dotbelow', 'dotabove', 'underlineaccent', 'commaaccent', 'cedilla', 'altcedilla', 'ogonek', 'altogonek', 'commaabovecmb','commaaccent']
-cap = ['acute.sc', 'grave.sc', 'hungarumlaut.sc', 'doublegrave.sc', 'circumflex.sc', 'caron.sc', 'dieresis.sc', 'tilde.sc', 'ring.sc', 'macron.sc', 'breve.sc', 'invertedbreve.sc', 'dotaccent.sc', 'dotbelow.sc', 'dotabove.sc', 'linebelow.sc',  'cedilla.sc', 'altcedilla.sc', 'ogonek.sc', 'altogonek.sc', 'commaabovecmb.sc', 'commaaccent.sc']
+lowercase = ['acute', 'grave', 'hungarumlaut', 'doublegrave', 'circumflex', 'caron', 'dieresis', 'tilde', 'ring', 'macron', 'breve', 'invertedbreve', 'dotaccent', 'linebelow', 'dotbelow', 'dotabove', 'underlineaccent', 'commaaccent', 'cedilla', 'altcedilla', 'ogonek', 'altogonek', 'commaabovecmb', 'commaaccent', 'croat.cap']
+cap = ['acute.sc', 'grave.sc', 'hungarumlaut.sc', 'doublegrave.sc', 'circumflex.sc', 'caron.sc', 'dieresis.sc', 'tilde.sc', 'ring.sc', 'macron.sc', 'breve.sc', 'invertedbreve.sc', 'dotaccent.sc', 'dotbelow.sc', 'dotabove.sc', 'linebelow.sc',  'cedilla.sc', 'altcedilla.sc', 'ogonek.sc', 'altogonek.sc', 'commaabovecmb.sc', 'croat.cap', 'commaaccent.sc']
 moveup=['acute.sc', 'grave.sc', 'hungarumlaut.sc', 'doublegrave.sc', 'circumflex.sc', 'caron.sc', 'dieresis.sc', 'tilde.sc', 'ring.sc', 'macron.sc', 'breve.sc', 'invertedbreve.sc', 'dotaccent.sc', 'dotabove.sc', 'commaabovecmb.sc']
 
 for i in CurrentFont().glyphOrder:
