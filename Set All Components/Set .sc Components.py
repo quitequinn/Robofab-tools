@@ -1,5 +1,5 @@
 #add components to their .sc versions - Quinn Keaveney
-height = 20
+height = 100
 
 
 f = CurrentFont()
@@ -13,7 +13,7 @@ for i in cap:
     low = i[:-3]
     f.newGlyph(i)
     f[i].appendComponent(low)
-    if i == moveup:
+    if i in moveup:
         f[i].move((0, height))
         f[i].width = f[low].width
     f[i].mark = 1

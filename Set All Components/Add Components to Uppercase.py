@@ -4,16 +4,20 @@ f = CurrentFont()
 
 normglyphs = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'Eng', 'Thorn', 'Eth', 'Ezh', 'AE']
 
-accentglyphs = ["Aacute", "Abreve", "Acaron", "Acircumflex", "Adieresis", "Adieresismacron", "Adotaccent", "Adoublegrave", "Agrave", "Ainvertedbreve", "Amacron", "Aogonek", "Aring", "Aringacute", "Atilde", "AE", "AEacute", "AEmacron", "Cacute", "Ccaron", "Ccedilla", "Ccircumflex", "Cdotaccent", "Dcaron", "Dcedilla", "Dcroat", "Ddotbelow", "Eacute", "Eacutedotbelow", "Ebreve", "Ecaron", "Ecircumflex", "Edieresis", "Edotaccent", "Edoublegrave", "Egrave", "Egravedotbelow", "Einvertedbreve", "Emacron", "Eogonek", "Gacute", "Gbreve", "Gcaron", "Gcircumflex", "Gcommaaccent", "Gdotaccent", "Gstroke", "Hbar", "Hcaron", "Hcircumflex", "Hdotbelow", "Hmacronbelow", "Iacute", "Ibreve", "Icaron", "Icircumflex", "Idieresis", "Idotaccent", "Idotbelow", "Idoublegrave", "Igrave", "Iinvertedbreve", "Imacron", "Iogonek", "Itilde", "Jcaron", "Jcircumflex", "Kcaron", "Kcedilla", "Kcommaaccent", "Khook", "Lacute", "Lcaron", "Lcedilla", "Lcommaaccent", "Ldotaccent", "Ldotbelow", "Ldotbelowmacron", "Lslash", "Mcedilla", "Mdotbelow", "Mmacron", "Nacute", "Ncaron", "Ncedilla", "Ncommaaccent", "Ndescender", "Ndieresis", "Ndotaccent", "Ndotbelow", "Ngrave", "Nmacron", "Ntilde", "Oacute", "Obreve", "Ocaron", "Ocedilla", "Ocircumflex", "Ocommaturnedabove", "Odieresis", "Odotaccent", "Odotabovemacron", "Odotbelow", "Odoublegrave", "Ograve", "Ohungarumlaut", "Oinvertedbreve", "Omacron", "Oogonek", "Oogonekmacron", "Oslash", "Oslashacute", "Otilde", "Otildemacron", "Ounderlineaccent", "barredO", "OE", "Pmacron", "Racute", "Rcaron", "Rcedilla", "Rcommaaccent", "Rdotbelow", "Rdotbelowmacron", "Rdoublegrave", "Rinvertedbreve", "Sacute", "Scaron", "Scedilla", "Scircumflex", "Scommaaccent", "Sdotbelow", "Germandbls", "Tbar", "Tcaron", "Tcedilla", "Tcommaaccent", "Tdotbelow", "Uacute", "Ubreve", "Ucaron", "Ucircumflex", "Udieresis", "Udotbelow", "Udoublegrave", "Ugrave", "Uhungarumlaut", "Uinvertedbreve", "Umacron", "Umacronbelow", "Uogonek", "Uring", "Utilde", "Wacute", "Wcircumflex", "Wdieresis", "Wgrave", "Yacute", "Ycircumflex", "Ydieresis", "Ygrave", "Ytilde", "Zacute", "Zcaron", "Zdotaccent", "Eng", "Thorn", "Eth", "Ezh", "Ezhcaron", "Schwa"]
+accentglyphs = ["Aacute", "Abreve", "Acaron", "Acircumflex", "Adieresis", "Adieresismacron", "Adotaccent", "Adoublegrave", "Agrave", "Ainvertedbreve", "Amacron", "Aogonek", "Aring", "Aringacute", "Atilde", "AE", "AEacute", "AEmacron", "Cacute", "Ccaron", "Ccedilla", "Ccircumflex", "Cdotaccent", "Dcaron", "Dcedilla", "Dcroat", "Ddotbelow", "Eacute", "Eacutedotbelow", "Ebreve", "Ecaron", "Ecircumflex", "Edieresis", "Edotaccent", "Edoublegrave", "Egrave", "Egravedotbelow", "Einvertedbreve", "Emacron", "Eogonek", "Gacute", "Gbreve", "Gcaron", "Gcircumflex", "Gcommaaccent", "Gdotaccent", "Gstroke", "Hbar", "Hcaron", "Hcircumflex", "Hdotbelow", "Hmacronbelow", "Iacute", "Ibreve", "Icaron", "Icircumflex", "Idieresis", "Idotaccent", "Idotbelow", "Idoublegrave", "Igrave", "Iinvertedbreve", "Imacron", "Iogonek", "Itilde", "Jcaron", "Jcircumflex", "Kcaron", "Kcedilla", "Kcommaaccent", "Khook", "Lacute", "Lcaron", "Lcedilla", "Lcommaaccent", "Ldot", "Ldotbelow", "Ldotbelowmacron", "Lslash", "Mcedilla", "Mdotbelow", "Mmacron", "Nacute", "Ncaron", "Ncedilla", "Ncommaaccent", "Ndescender", "Ndieresis", "Ndotaccent", "Ndotbelow", "Ngrave", "Nmacron", "Ntilde", "Oacute", "Obreve", "Ocaron", "Ocedilla", "Ocircumflex", "Ocommaturnedabove", "Odieresis", "Odotaccent", "Odotabovemacron", "Odotbelow", "Odoublegrave", "Ograve", "Ohungarumlaut", "Oinvertedbreve", "Omacron", "Oogonek", "Oogonekmacron", "Oslash", "Oslashacute", "Otilde", "Otildemacron", "Olinebelow", "barredO", "OE", "Pmacron", "Racute", "Rcaron", "Rcedilla", "Rcommaaccent", "Rdotbelow", "Rdotbelowmacron", "Rdoublegrave", "Rinvertedbreve", "Sacute", "Scaron", "Scedilla", "Scircumflex", "Scommaaccent", "Sdotbelow", "Germandbls", "Tbar", "Tcaron", "Tcedilla", "Tcommaaccent", "Tdotbelow", "Uacute", "Ubreve", "Ucaron", "Ucircumflex", "Udieresis", "Udotbelow", "Udoublegrave", "Ugrave", "Uhungarumlaut", "Uinvertedbreve", "Umacron", "Umacronbelow", "Uogonek", "Uring", "Utilde", "Wacute", "Wcircumflex", "Wdieresis", "Wgrave", "Yacute", "Ycircumflex", "Ydieresis", "Ygrave", "Ytilde", "Zacute", "Zcaron", "Zdotaccent", "Eng", "Thorn", "Eth", "Ezh", "Ezhcaron", "Schwa"]
 
-accents = ['acute.cap', 'grave.cap', 'hungarumlaut.cap', 'doublegrave.cap', 'circumflex.cap', 'caron.cap', 'dieresis.cap', 'tilde.cap', 'ring.cap', 'macron.cap', 'breve.cap', 'invertedbreve.cap', 'dotaccent.cap', 'dotbelow.cap', 'dotabove.cap', 'linebelow.cap', 'commaaccent.cap', 'cedilla.cap', 'altcedilla.cap', 'ogonek.cap', 'altogonek.cap', 'commaabovecmb.cap', 'croat.cap', 'stroke.cap', 'slashaccent.cap', 'descender.cap']
+accents = ['acute.cap', 'grave.cap', 'hungarumlaut.cap', 'doublegrave.cap', 'circumflex.cap', 'caron.cap', 'dieresis.cap', 'tilde.cap', 'ring.cap', 'macron.cap', 'macronbelow.cap', 'breve.cap', 'invertedbreve.cap', 'dotaccent.cap', 'dotaccent.cap', 'dotbelow.cap', 'dotabove.cap', 'linebelow.cap', 'commaaccent.cap', 'cedilla.cap', 'altcedilla.cap', 'ogonek.cap', 'altogonek.cap', 'commaabovecmb.cap', 'croat.cap', 'stroke.cap', 'slashaccent.cap', 'descender.cap', 'bar.cap']
+
 
 for i in CurrentFont().glyphOrder:
     CurrentFont()[i].mark = 0
 for i in accentglyphs:
+
     for accent in accents:
         sintaxless = accent.replace('.cap','')
         if sintaxless in i:
+            if sintaxless is 'bar':
+                sintaxless = 'baraccent'            
             accentless = i.replace(sintaxless,'')
             if accentless in normglyphs:
                 f.newGlyph(i)
@@ -41,6 +45,37 @@ for i in accentglyphs:
                             error = ('> There is a problem with ' + i + ' <').upper()
                             print error
                             print len(error) * '^'
+    
+    # Exceptions                        
+    if i is 'Khook':
+        f.newGlyph(i)
+        f[i].appendComponent('K')
+        f[i].width = f['K'].width
+        print i + ' = just' + i + ', you should add the rest'
+        f[i].mark = 50
+    if i is 'Oslash':
+        f.newGlyph(i)
+        f[i].appendComponent('O')
+        f[i].width = f['O'].width
+        f[i].mark = 50 
+    if i is 'Oslashacute':
+        f.newGlyph(i)
+        f[i].appendComponent('Oslash')
+        f[i].appendComponent('acute.cap`')
+        f[i].width = f['O'].width
+        f[i].mark = 1 
+    if i is 'Lslash':
+        f.newGlyph(i)
+        f[i].appendComponent('L')
+        f[i].width = f['L'].width
+        f[i].mark = 50 
+    if i is 'Ldot':
+        f.newGlyph(i)
+        f[i].appendComponent('L')
+        f[i].appendComponent('dotaccent')
+        f[i].width = f['L'].width
+        f[i].mark = 1  
+
                             
 f.update()
 print ''
