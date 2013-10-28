@@ -9,7 +9,9 @@ for i in CurrentFont().glyphOrder:
     CurrentFont()[i].mark = 0
 for i in characters:
     char = i.lower()
-    f[char] = f[char.capitalize()]
+    f[char].appendComponent(i)
+    f[char].width = f[i].width
+
     f[char].mark = 1
 
 f.update()
