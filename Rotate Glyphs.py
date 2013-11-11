@@ -9,7 +9,6 @@ for i in f:
     f[i.name].rotate(-14)
     f[i.name].move(((w/2), 0))
 
-
 f.update() 
 print ''
 print 'Digested by Python.'
