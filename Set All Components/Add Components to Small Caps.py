@@ -10,19 +10,30 @@ accentglyphs = ['Aacute.sc', 'Agrave.sc', 'Adoublegrave.sc', 'Abreve.sc', 'Ainve
 accents = ['acute.sc', 'grave.sc', 'hungarumlaut.sc', 'doublegrave.sc', 'circumflex.sc', 'caron.sc', 'dieresis.sc', 'tilde.sc', 'ring.sc', 'macron.sc', 'macronbelow.sc', 'breve.sc', 'invertedbreve.sc', 'dotaccent.sc', 'dotbelow.sc', 'dotabove.sc', 'linebelow.sc',  'cedilla.sc', 'altcedilla.sc', 'ogonek.sc', 'altogonek.sc', 'commaabovecmb.sc', 'commaaccent.sc', 'cedilla.sc', 'altcedilla.sc', 'ogonek.sc', 'altogonek.sc', 'commaabovecmb.sc', 'croat.sc', 'stroke.sc', 'slashaccent.sc', 'descender.sc', 'bar.sc']
 
 for i in CurrentFont().glyphOrder:
+    # Remove marks
     CurrentFont()[i].mark = 0
 for i in accentglyphs:
     for accent in accents:
+        # strips .sc
         sintaxless = accent.replace('.sc','')
         if sintaxless in i:
             if sintaxless is 'bar':
-                sintaxless = 'baraccent'  
+                sintaxless = 'baraccent'            
             accentless = i.replace(sintaxless,'')
             if accentless in normglyphs:
                 f.newGlyph(i)
                 f[i].appendComponent(accentless)
+
+                # centers first component to left shoulder
+                w = f[i].width
+                f[i].move((-(w/2), 0))
+                
                 f[i].appendComponent(accent)
                 f[i].width = f[accentless].width
+
+                # recenters components         
+                f[i].move(((w/2), 0))
+
                 print i + ' = ' + accentless + ' with ' + accent
                 f[i].mark = 1
 
@@ -33,56 +44,56 @@ for i in accentglyphs:
                         accentless2 = accentless.replace(sintaxless2,'')
                         if accentless2 in normglyphs:
                             f.newGlyph(i)
-                            f[i].appendComponent(accent2)
-                            f[i].move((0, secondAccentHeight))
                             f[i].appendComponent(accentless2)
+                            w = f[i].width
+                            f[i].move((-(w/2), 0))
                             f[i].appendComponent(accent)
+                            f[i].appendComponent(accent2)               
+                            if (accent or accent2) is not ('dotbelow.sc' or 'macron.sc'):
+                                f[i].components[2].move((0, secondAccentHeight))
                             f[i].width = f[accentless2].width
+                            f[i].move(((w/2), 0))            
+                            f[i].mark = 10
                             print i + ' = ' + accentless + ' with ' + accent + ' and ' + accent2
-                            f[i].mark = 1
-
+                            
                         else:
                             error = ('> There is a problem with ' + i + ' <').upper()
                             print error
                             print len(error) * '^'
     
-    # Exceptions                        
+    # Exceptions that you need to fix                    
     if i is 'Khook.sc':
-        f.newGlyph(i)
-        f[i].appendComponent('K.sc')
         f[i].width = f['K.sc'].width
         print i + ' = just' + i + ', you should add the rest'
         f[i].mark = 50
     if i is 'Oslash.sc':
-        f.newGlyph(i)
-        f[i].appendComponent('O.sc')
         f[i].width = f['O.sc'].width
+        print i + ' = just' + i + ', you should add the rest'
         f[i].mark = 50 
-    if i is 'Oslashacute':
+    if i is 'Lslash.sc':
+        f[i].width = f['L.sc'].width
+        print i + ' = just' + i + ', you should add the rest'
+        f[i].mark = 50 
+                
+    # Exceptions that will work out in the end          
+    if i is 'Oslashacute.sc':
         f.newGlyph(i)
         f[i].appendComponent('Oslash.sc')
         f[i].appendComponent('acute.sc')
         f[i].width = f['O.sc'].width
-        f[i].mark = 1 
-    if i is 'Lslash.sc':
-        f.newGlyph(i)
-        f[i].appendComponent('L.sc')
-        f[i].width = f['L.sc'].width
-        f[i].mark = 50 
+        f[i].mark = 25
     if i is 'Ocommaaccent.sc':
         f.newGlyph(i)
         f[i].appendComponent('O.sc')
         f[i].appendComponent('commaaccentturned.sc')
         f[i].width = f['O.sc'].width
-        f[i].mark = 1   
-    if i is 'Ldot':
+        f[i].mark = 25   
+    if i is 'Ldot.sc':
         f.newGlyph(i)
         f[i].appendComponent('L.sc')
         f[i].appendComponent('dotaccent.sc')
         f[i].width = f['L.sc'].width
-        f[i].mark = 1  
-
-                            
+        f[i].mark = 25  
 
                             
 f.update()
