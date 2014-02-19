@@ -1,0 +1,599 @@
+@_A.sc=[A.sc  Agrave.sc Aacute.sc Acircumflex.sc Atilde.sc Adieresis.sc Amacron.sc Abreve.sc Aring.sc Aringacute.sc Aogonek.sc];
+@_A=[A  Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Aring Aringacute Aogonek];
+@_AE.sc=[AE.sc  AEacute.sc];
+@_AE=[AE  AEacute];
+@_B.sc=[B.sc  D.sc E.sc F.sc H.sc I.sc K.sc L.sc M.sc N.sc P.sc R.sc Dcaron.sc Dcroat.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Eogonek.sc fi.sc fl.sc Hcircumflex.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Iogonek.sc IJ.sc Kcommaaccent.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Lslash.sc Ldot.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Racute.sc Rcaron.sc Rcommaaccent.sc Eng.sc Eth.sc Thorn.sc];
+@_B=[B  D E F H I K L M N P R Dcaron Dcroat Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Ebreve Edotaccent Eogonek fi.cap fl.cap Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Iogonek IJ Kcommaaccent Lacute Lcaron Lcommaaccent Lslash Ldot Nacute Ncaron Ntilde Ncommaaccent Racute Rcaron Rcommaaccent Eng Eth Thorn];
+@_C.alt=[C.alt  Cacute.alt Ccircumflex.alt Ccaron.alt Cdotaccent.alt Ccedilla.alt];
+@_C.sc1=[C.sc  G.sc O.sc Q.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Obreve.sc Ohungarumlaut.sc Oslash.sc Oslashacute.sc OE.sc C.scalt cacute.scalt ccircumflex.scalt ccaron.scalt cdotaccent.scalt ccedilla.scalt];
+@_C.sc=[C.sc  Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc];
+@_C.scalt=[C.scalt  cacute.scalt ccircumflex.scalt ccaron.scalt cdotaccent.scalt ccedilla.scalt];
+@_C1=[C  G O Q Cacute Ccircumflex Ccaron Cdotaccent Ccedilla Gcircumflex Gbreve Gdotaccent Gcommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash Oslashacute OE C.alt Cacute.alt Ccircumflex.alt Ccaron.alt Cdotaccent.alt Ccedilla.alt];
+@_C=[C  Cacute Ccircumflex Ccaron Cdotaccent Ccedilla];
+@_D.sc=[D.sc  O.sc Q.sc Dcaron.sc Dcroat.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Obreve.sc Ohungarumlaut.sc Oslash.sc Oslashacute.sc Eth.sc];
+@_D=[D  O Q Dcaron Dcroat Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash Oslashacute Eth];
+@_E.sc=[E.sc  AE.sc AEacute.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Eogonek.sc OE.sc];
+@_E=[E  AE AEacute Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Ebreve Edotaccent Eogonek OE];
+@_G.sc=[G.sc  Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc];
+@_G=[G  Gcircumflex Gbreve Gdotaccent Gcommaaccent];
+@_H.sc=[H.sc  I.sc M.sc N.sc fi.sc Hcircumflex.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Iogonek.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Eng.sc];
+@_H=[H  I M N fi.cap Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Iogonek Nacute Ncaron Ntilde Ncommaaccent Eng];
+@_J.sc1=[J.sc  IJ.sc Jcircumflex.sc];
+@_J.sc=[J.sc  Jcircumflex.sc];
+@_J1=[J  IJ Jcircumflex];
+@_J=[J  Jcircumflex];
+@_K.sc=[K.sc  Kcommaaccent.sc];
+@_K=[K  Kcommaaccent];
+@_L.sc=[L.sc  fl.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Lslash.sc Ldot.sc];
+@_L=[L  fl.cap Lacute Lcaron Lcommaaccent Lslash Ldot];
+@_P.sc=[P.sc  Thorn.sc];
+@_P=[P  Thorn];
+@_R.sc=[R.sc  Racute.sc Rcaron.sc Rcommaaccent.sc];
+@_R=[R  Racute Rcaron Rcommaaccent];
+@_S.sc=[S.sc  germandbls.sc Sacute.sc Scircumflex.sc Scaron.sc Scedilla.sc Scommaaccent.sc];
+@_S=[S  germandbls.cap Sacute Scircumflex Scaron Scedilla Scommaaccent];
+@_T.sc=[T.sc  Tcaron.sc Tcommaaccent.sc Tbar.sc];
+@_T1=[T  Tcaron Tcommaaccent Tbar T_h];
+@_T=[T  Tcaron Tcommaaccent Tbar];
+@_U.sc=[U.sc  Ugrave.sc Uacute.sc Ucircumflex.sc Utilde.sc Udieresis.sc Umacron.sc Ubreve.sc Uring.sc Uhungarumlaut.sc Uogonek.sc];
+@_U=[U  Ugrave Uacute Ucircumflex Utilde Udieresis Umacron Ubreve Uring Uhungarumlaut Uogonek];
+@_W.sc=[W.sc  Wgrave.sc Wacute.sc Wcircumflex.sc Wdieresis.sc];
+@_W=[W  Wgrave Wacute Wcircumflex Wdieresis];
+@_Y.sc=[Y.sc  Ygrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc];
+@_Y=[Y  Ygrave Yacute Ycircumflex Ydieresis];
+@_Z.sc=[Z.sc  Zacute.sc Zcaron.sc Zdotaccent.sc];
+@_Z=[Z  Zacute Zcaron Zdotaccent];
+@_a1=[a  agrave aacute acircumflex atilde adieresis amacron abreve aring aringacute aogonek];
+@_a=[a  aacute aring aringacute aogonek ae aeacute];
+@_agrave=[agrave  acircumflex atilde adieresis amacron abreve];
+@_at=[at  at.sc at.cap copyright registered published];
+@_b1=[b  h i k l hcircumflex hbar igrave iacute icircumflex itilde idieresis imacron ibreve iogonek i.TRK ij kcommaaccent lacute lcaron lcommaaccent lslash ldot germandbls thorn l.alt lacute.alt lcaron.alt lcommaaccent.alt lslash.alt ldot.alt longs];
+@_b=[b  o p ograve oslash thorn f_b f_f_b];
+@_bullet=[bullet  periodcentered periodcentered.cap];
+@_c.alt=[c.alt  cacute.alt ccircumflex.alt ccaron.alt cdotaccent.alt ccedilla.alt];
+@_c1=[c  d e o q cacute cdotaccent ccedilla dcaron dcroat eacute edotaccent eogonek oacute ohungarumlaut oslash oslashacute oe c_t c_t.alt a.alt aacute.alt aring.alt aringacute.alt aogonek.alt c.alt cacute.alt cdotaccent.alt ccedilla.alt g.alt];
+@_c=[c  cacute ccircumflex ccaron cdotaccent ccedilla];
+@_ccircumflex=[ccircumflex  ccaron egrave ecircumflex ecaron edieresis emacron ebreve ograve ocircumflex otilde odieresis omacron obreve agrave.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt ccircumflex.alt ccaron.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt];
+@_comma=[comma  quotesinglbase quotedblbase];
+@_d=[d  i j l dcroat igrave iacute icircumflex itilde idieresis imacron ibreve iogonek i.TRK ij jcircumflex lacute lcommaaccent lslash ldot fi f_f_i f_j f_f_j fl f_f_l fl.alt f_f_l.alt l.alt lacute.alt lcommaaccent.alt lslash.alt ldot.alt];
+@_dcaron=[dcaron  lcaron lcaron.alt];
+@_e=[e  ae aeacute egrave edotaccent eogonek oe];
+@_eacute=[eacute  ecircumflex ecaron edieresis emacron ebreve];
+@_f1=[f  f_b f_f_b f_f f_h f_f_h fi f_f_i f_j f_f_j f_k f_f_k fl f_f_l f_t f_f_t fl.alt f_f_l.alt];
+@_f=[f  f_f longs];
+@_g=[g  gcircumflex gbreve gdotaccent gcommaaccent];
+@_guilsinglleft.cap=[guilsinglleft.cap  guillemotleft.cap];
+@_guilsinglleft=[guilsinglleft  guillemotleft];
+@_guilsinglright.cap=[guilsinglright.cap  guillemotright.cap];
+@_guilsinglright=[guilsinglright  guillemotright];
+@_h=[h  m n hcircumflex hbar nacute ncaron ntilde ncommaaccent eng f_h f_f_h T_h];
+@_hyphen.cap=[hyphen.cap  endash.cap emdash.cap];
+@_hyphen=[hyphen  endash emdash minus];
+@_j=[j  jcircumflex];
+@_k=[k  kcommaaccent f_k f_f_k];
+@_m=[m  n p r dotlessi nacute ncaron ntilde ncommaaccent racute rcaron rcommaaccent eng];
+@_oacute=[oacute  ocircumflex otilde odieresis omacron obreve ohungarumlaut oslashacute];
+@_parenleft=[parenleft  parenleft.cap bracketleft bracketleft.cap];
+@_parenright=[parenright  parenright.cap bracketright bracketright.cap];
+@_period=[period  ellipsis];
+@_q=[q  g.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt];
+@_quoteleft=[quoteleft  quotedblleft];
+@_quoteright=[quoteright  quotedblright];
+@_r=[r  racute rcaron rcommaaccent];
+@_s1=[s  sacute scircumflex scaron scedilla scommaaccent s_t];
+@_s=[s  sacute scircumflex scaron scedilla scommaaccent];
+@_semicolon=[semicolon  colon];
+@_t1=[t  tcommaaccent tbar c_t s_t f_t f_f_t c_t.alt];
+@_t=[t  tcaron tcommaaccent tbar];
+@_u1=[u  dotlessi ugrave uacute ucircumflex utilde udieresis umacron ubreve uring uhungarumlaut uogonek a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt aring.alt aringacute.alt aogonek.alt];
+@_u=[u  ugrave uacute ucircumflex utilde udieresis umacron ubreve uring uhungarumlaut uogonek];
+@_w=[w  wgrave wacute wcircumflex wdieresis];
+@_y=[y  ygrave yacute ycircumflex ydieresis];
+@_z=[z  zacute zcaron zdotaccent];
+@_zero.slash.LP=[zero.slash.LP  zero.LP];
+@_zero.slash.OP=[zero.slash.OP  zero.OP];
+@aalt1=[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Cacute Ccircumflex Ccaron Cdotaccent Ccedilla a b c d e f g h l n o q s t u v w x i.TRK hyphen exclamdown questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft parenright bracketleft bracketright braceleft braceright at numbersign Euro dollar cent sterling florin yen zero.slash zero one two three four five six seven eight nine numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.slash.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.slash.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.slash.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand percent.osf perthousand.osf plus minus equal ampersand];
+@aalt2=[Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Aring Aringacute Aogonek AE AEacute Dcaron Dcroat Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Ebreve Edotaccent Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcaron Lcommaaccent Lslash Ldot Nacute Ncaron Ntilde Ncommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash Oslashacute OE Racute Rcaron Rcommaaccent germandbls.cap Sacute Scircumflex Scaron Scedilla Scommaaccent Tcaron Tcommaaccent Tbar Ugrave Uacute Ucircumflex Utilde Udieresis Umacron Ubreve Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zcaron Zdotaccent Eng Eth Thorn i j k m p r y z agrave aacute acircumflex atilde adieresis amacron abreve aring aringacute aogonek cacute ccircumflex ccaron cdotaccent ccedilla gcircumflex gbreve gdotaccent gcommaaccent lacute lcaron lcommaaccent lslash ldot germandbls A.sc C.sc O.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc exclam question slash zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr plusminus multiply divide asciitilde asciicircum less greater lessequal greaterequal c_t fl f_f_l];
+@aalt3=[Agrave.sc Aacute.sc Acircumflex.sc Atilde.sc Adieresis.sc Amacron.sc Abreve.sc Aring.sc Aringacute.sc Aogonek.sc AE.sc AEacute.sc Dcaron.sc Dcroat.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Eogonek.sc Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc Hcircumflex.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Iogonek.sc IJ.sc Jcircumflex.sc Kcommaaccent.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Lslash.sc Ldot.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Obreve.sc Ohungarumlaut.sc Oslash.sc Oslashacute.sc OE.sc Racute.sc Rcaron.sc Rcommaaccent.sc germandbls.sc Sacute.sc Scircumflex.sc Scaron.sc Scedilla.sc Scommaaccent.sc Tcaron.sc Tcommaaccent.sc Tbar.sc Ugrave.sc Uacute.sc Ucircumflex.sc Utilde.sc Udieresis.sc Umacron.sc Ubreve.sc Uring.sc Uhungarumlaut.sc Uogonek.sc Wgrave.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Ygrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Zacute.sc Zcaron.sc Zdotaccent.sc Eng.sc Eth.sc Thorn.sc i.superior j.superior k.superior m.superior p.superior r.superior y.superior z.superior agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt aring.alt aringacute.alt aogonek.alt cacute.alt ccircumflex.alt ccaron.alt cdotaccent.alt ccedilla.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt lacute.alt lcaron.alt lcommaaccent.alt lslash.alt ldot.alt germandbls.cap ordfeminine C.scalt ordmasculine cacute.scalt ccircumflex.scalt ccaron.scalt cdotaccent.scalt ccedilla.scalt exclam question fraction zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom circledleftwardsarrow circledupwardsarrow circleddownwardsarrow negativecircleddownwardsarrow arrowup arrowleft arrowright negativecircledleftwardsarrow negativecircledrightwardsarrow c_t.alt fl.alt f_f_l.alt];
+@c2sc1=[hyphen exclam exclamdown question questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft parenright bracketleft bracketright braceleft braceright at numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand ampersand];
+@c2sc2=[hyphen exclam exclamdown question questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc at.sc numbersign Euro dollar cent sterling florin yen zero one two three four five six seven eight nine numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP percent.osf perthousand.osf ampersand.sc];
+@c2sc3=[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Agrave Aacute Acircumflex Atilde Adieresis Amacron Abreve Aring Aringacute Aogonek AE AEacute Cacute Ccircumflex Ccaron Cdotaccent Ccedilla Dcaron Dcroat Egrave Eacute Ecircumflex Ecaron Edieresis Emacron Ebreve Edotaccent Eogonek Gcircumflex Gbreve Gdotaccent Gcommaaccent Hcircumflex Hbar Igrave Iacute Icircumflex Itilde Idieresis Imacron Ibreve Idotaccent Iogonek IJ Jcircumflex Kcommaaccent Lacute Lcaron Lcommaaccent Lslash Ldot Nacute Ncaron Ntilde Ncommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash Oslashacute OE Racute Rcaron Rcommaaccent germandbls.cap Sacute Scircumflex Scaron Scedilla Scommaaccent Tcaron Tcommaaccent Tbar Ugrave Uacute Ucircumflex Utilde Udieresis Umacron Ubreve Uring Uhungarumlaut Uogonek Wgrave Wacute Wcircumflex Wdieresis Ygrave Yacute Ycircumflex Ydieresis Zacute Zcaron Zdotaccent Eng Eth Thorn];
+@c2sc4=[A.sc B.sc C.sc D.sc E.sc F.sc G.sc H.sc I.sc J.sc K.sc L.sc M.sc N.sc O.sc P.sc Q.sc R.sc S.sc T.sc U.sc V.sc W.sc X.sc Y.sc Z.sc Agrave.sc Aacute.sc Acircumflex.sc Atilde.sc Adieresis.sc Amacron.sc Abreve.sc Aring.sc Aringacute.sc Aogonek.sc AE.sc AEacute.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc Dcaron.sc Dcroat.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Eogonek.sc Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc Hcircumflex.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Idotaccent.sc Iogonek.sc IJ.sc Jcircumflex.sc Kcommaaccent.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Lslash.sc Ldot.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Obreve.sc Ohungarumlaut.sc Oslash.sc Oslashacute.sc OE.sc Racute.sc Rcaron.sc Rcommaaccent.sc germandbls.sc Sacute.sc Scircumflex.sc Scaron.sc Scedilla.sc Scommaaccent.sc Tcaron.sc Tcommaaccent.sc Tbar.sc Ugrave.sc Uacute.sc Ucircumflex.sc Utilde.sc Udieresis.sc Umacron.sc Ubreve.sc Uring.sc Uhungarumlaut.sc Uogonek.sc Wgrave.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Ygrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Zacute.sc Zcaron.sc Zdotaccent.sc Eng.sc Eth.sc Thorn.sc];
+@case1=[i.TRK germandbls hyphen exclam exclamdown question questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft parenright bracketleft bracketright braceleft braceright at numbersign Euro dollar cent sterling florin yen zero one two three four five six seven eight nine numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP percent.osf perthousand.osf ampersand];
+@case2=[Idotaccent germandbls.cap hyphen.cap exclam exclamdown.cap question questiondown.cap guilsinglleft.cap guilsinglright.cap guillemotleft.cap guillemotright.cap endash.cap emdash.cap periodcentered.cap parenleft.cap parenright.cap bracketleft.cap bracketright.cap braceleft.cap braceright.cap at.cap numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand ampersand];
+@class2945=[A O a o s A.sc O.sc zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+@class2946=[ordfeminine ordmasculine ordfeminine ordmasculine longs ordfeminine ordmasculine zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+@frac1=[zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+@frac2=[zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+@frac3=[slash zero one two three four five six seven eight nine];
+@frac4=[fraction zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
+@hist1=[a b c d e f g h i j k l m n o p q r s t u v w x y z agrave aacute acircumflex atilde adieresis amacron abreve aring aringacute aogonek ae aeacute cacute ccircumflex ccaron cdotaccent ccedilla dcaron dcroat egrave eacute ecircumflex ecaron edieresis emacron ebreve edotaccent eogonek gcircumflex gbreve gdotaccent gcommaaccent hcircumflex hbar igrave iacute icircumflex itilde idieresis imacron ibreve iogonek i.TRK ij jcircumflex kcommaaccent lacute lcaron lcommaaccent lslash ldot nacute ncaron ntilde ncommaaccent ograve oacute ocircumflex otilde odieresis omacron obreve ohungarumlaut oslash oslashacute oe racute rcaron rcommaaccent sacute scircumflex scaron scedilla scommaaccent tcaron tcommaaccent tbar ugrave uacute ucircumflex utilde udieresis umacron ubreve uring uhungarumlaut uogonek wgrave wacute wcircumflex wdieresis ygrave yacute ycircumflex ydieresis zacute zcaron zdotaccent eng eth thorn];
+@lnum1=[numbersign Euro dollar cent sterling florin yen zero.slash zero one two three four five six seven eight nine numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.slash.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP percent.osf perthousand.osf];
+@lnum2=[numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.slash.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.slash.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand];
+@numr1=[zero one two three four five six seven eight nine];
+@ordn1=[zero.slash zero one two three four five six seven eight nine zero.slash.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP zero.slash.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT zero.slash.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP];
+@ordn2=[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z i.TRK];
+@ordn3=[a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior i.superior];
+@ornm1=[D L M N O P Q S U V W a b c d e f g h l n q s t u v w x one two three four five six seven eight plus minus plusminus multiply divide equal asciitilde asciicircum less greater lessequal greaterequal];
+@ornm2=[search pointer sheetofpaper pencil writinghand envelope attach print memopad pointer.alt increase pointingindexleftwhite pointingindexrightwhite good bad withecircle blackcircle ballotroundbowwithx ballotroundbowwithx.alt flag blackstar comments rss at.alt whitesquare blacksquare ballotboxwithx ballotboxwithx.alt whiterightpointingtriangle whiteleftpointingtriangle whiteuppointingtriangle whitedownpointingtriangle arrowopenright arrowopenleft arrowopenup arrowopendown arrowdown circledrightwardsarrow circledleftwardsarrow circledupwardsarrow circleddownwardsarrow negativecircledupwardsarrow negativecircleddownwardsarrow arrowup arrowleft arrowright negativecircledleftwardsarrow negativecircledrightwardsarrow];
+@sinf1=[parenleft parenright zero one two three four five six seven eight nine plus minus equal];
+@sinf2=[parenleftinferior parenrightinferior zeroinferior oneinferior twoinferior threeinferior fourinferior fiveinferior sixinferior seveninferior eightinferior nineinferior plusinferior minusinferior equalinferior];
+@smcp1=[germandbls hyphen exclam exclamdown question questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft parenright bracketleft bracketright braceleft braceright at numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand ampersand longs];
+@smcp2=[germandbls.sc hyphen exclam exclamdown question questiondown guilsinglleft guilsinglright guillemotleft guillemotright endash emdash periodcentered parenleft.sc parenright.sc bracketleft.sc bracketright.sc braceleft.sc braceright.sc at.sc numbersign Euro dollar cent sterling florin yen zero one two three four five six seven eight nine numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP percent.osf perthousand.osf ampersand.sc S.sc];
+@smcp3=[a b c d e f g h i j k l m n o p q r s t u v w x y z agrave aacute acircumflex atilde adieresis amacron abreve aring aringacute aogonek ae aeacute cacute ccircumflex ccaron cdotaccent ccedilla dcaron dcroat egrave eacute ecircumflex ecaron edieresis emacron ebreve edotaccent eogonek gcircumflex gbreve gdotaccent gcommaaccent hcircumflex hbar igrave iacute icircumflex itilde idieresis imacron ibreve iogonek dotlessi i.TRK ij jcircumflex kcommaaccent lacute lcaron lcommaaccent lslash ldot nacute ncaron ntilde ncommaaccent ograve oacute ocircumflex otilde odieresis omacron obreve ohungarumlaut oslash oslashacute oe racute rcaron rcommaaccent sacute scircumflex scaron scedilla scommaaccent germandbls tcaron tcommaaccent tbar ugrave uacute ucircumflex utilde udieresis umacron ubreve uring uhungarumlaut uogonek wgrave wacute wcircumflex wdieresis ygrave yacute ycircumflex ydieresis zacute zcaron zdotaccent eng eth thorn];
+@smcp4=[A.sc B.sc C.sc D.sc E.sc F.sc G.sc H.sc I.sc J.sc K.sc L.sc M.sc N.sc O.sc P.sc Q.sc R.sc S.sc T.sc U.sc V.sc W.sc X.sc Y.sc Z.sc Agrave.sc Aacute.sc Acircumflex.sc Atilde.sc Adieresis.sc Amacron.sc Abreve.sc Aring.sc Aringacute.sc Aogonek.sc AE.sc AEacute.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc Dcaron.sc Dcroat.sc Egrave.sc Eacute.sc Ecircumflex.sc Ecaron.sc Edieresis.sc Emacron.sc Ebreve.sc Edotaccent.sc Eogonek.sc Gcircumflex.sc Gbreve.sc Gdotaccent.sc Gcommaaccent.sc Hcircumflex.sc Hbar.sc Igrave.sc Iacute.sc Icircumflex.sc Itilde.sc Idieresis.sc Imacron.sc Ibreve.sc Iogonek.sc I.sc Idotaccent.sc IJ.sc Jcircumflex.sc Kcommaaccent.sc Lacute.sc Lcaron.sc Lcommaaccent.sc Lslash.sc Ldot.sc Nacute.sc Ncaron.sc Ntilde.sc Ncommaaccent.sc Ograve.sc Oacute.sc Ocircumflex.sc Otilde.sc Odieresis.sc Omacron.sc Obreve.sc Ohungarumlaut.sc Oslash.sc Oslashacute.sc OE.sc Racute.sc Rcaron.sc Rcommaaccent.sc Sacute.sc Scircumflex.sc Scaron.sc Scedilla.sc Scommaaccent.sc germandbls.sc Tcaron.sc Tcommaaccent.sc Tbar.sc Ugrave.sc Uacute.sc Ucircumflex.sc Utilde.sc Udieresis.sc Umacron.sc Ubreve.sc Uring.sc Uhungarumlaut.sc Uogonek.sc Wgrave.sc Wacute.sc Wcircumflex.sc Wdieresis.sc Ygrave.sc Yacute.sc Ycircumflex.sc Ydieresis.sc Zacute.sc Zcaron.sc Zdotaccent.sc Eng.sc Eth.sc Thorn.sc];
+@ss011=[a.alt agrave.alt aacute.alt acircumflex.alt atilde.alt adieresis.alt amacron.alt abreve.alt aring.alt aringacute.alt aogonek.alt];
+@ss021=[C Cacute Ccircumflex Ccaron Cdotaccent Ccedilla c cacute ccircumflex ccaron cdotaccent ccedilla C.sc Cacute.sc Ccircumflex.sc Ccaron.sc Cdotaccent.sc Ccedilla.sc c_t];
+@ss022=[C.alt Cacute.alt Ccircumflex.alt Ccaron.alt Cdotaccent.alt Ccedilla.alt c.alt cacute.alt ccircumflex.alt ccaron.alt cdotaccent.alt ccedilla.alt C.scalt cacute.scalt ccircumflex.scalt ccaron.scalt cdotaccent.scalt ccedilla.scalt c_t.alt];
+@sups1=[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z i.TRK parenleft parenright zero one two three four five six seven eight nine plus minus equal];
+@sups2=[a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior a.superior b.superior c.superior d.superior e.superior f.superior g.superior h.superior i.superior j.superior k.superior l.superior m.superior n.superior o.superior p.superior q.superior r.superior s.superior t.superior u.superior v.superior w.superior x.superior y.superior z.superior i.superior parenleftsuperior parenrightsuperior zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior plussuperior minussuperior equalsuperior];
+@tnum1=[numbersign.OP Euro.OP dollar.OP cent.OP sterling.OP florin.OP yen.OP zero.slash.OP zero.OP one.OP two.OP three.OP four.OP five.OP six.OP seven.OP eight.OP nine.OP numbersign.LP Euro.LP dollar.LP cent.LP sterling.LP florin.LP yen.LP zero.slash.LP zero.LP one.LP two.LP three.LP four.LP five.LP six.LP seven.LP eight.LP nine.LP percent perthousand percent.osf perthousand.osf];
+@tnum2=[numbersign Euro dollar cent sterling florin yen zero.slash zero one two three four five six seven eight nine numbersign.LT Euro.LT dollar.LT cent.LT sterling.LT florin.LT yen.LT zero.slash.LT zero.LT one.LT two.LT three.LT four.LT five.LT six.LT seven.LT eight.LT nine.LT percent perthousand percent.osf perthousand.osf];
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn AZE ;
+languagesystem latn TRK ;
+languagesystem latn MOL ;
+languagesystem latn ROM ;
+languagesystem latn CRT ;
+
+
+feature aalt{
+  feature ornm;
+  feature ss05;
+  feature locl;
+  feature frac;
+  feature numr;
+  feature dnom;
+  feature sups;
+  feature sinf;
+  feature tnum;
+  feature pnum;
+  feature lnum;
+  feature onum;
+  feature zero;
+  feature c2sc;
+  feature smcp;
+  feature case;
+  feature hist;
+  feature ss01;
+  feature salt;
+  feature swsh;
+  feature ss02;
+  feature titl;
+  feature ss03;
+  feature ss04;
+} aalt;
+
+
+ script latn; # Latin
+lookup kern0;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} kern;
+
+feature ornm { # Ornaments
+ # DEFAULT
+    sub @ornm1 by @ornm2;
+ script latn; # Latin
+    sub @ornm1 by @ornm2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ornm;
+
+feature ss05 { # Stylistic Set 5
+ # DEFAULT
+    sub @ornm1 by @ornm2;
+ script latn; # Latin
+    sub @ornm1 by @ornm2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ss05;
+
+feature locl { # Localized Forms
+ script latn; # Latin
+ language AZE  exclude_dflt; # Azeri
+    sub i by i.TRK;
+ language TRK  exclude_dflt; # Turkish
+    sub i by i.TRK;
+ language MOL  exclude_dflt; # Moldavian
+    sub [Scedilla scedilla] by [Scommaaccent scommaaccent];
+ language ROM  exclude_dflt; # Romanian
+    sub [Scedilla scedilla] by [Scommaaccent scommaaccent];
+ language CRT  exclude_dflt; # Crimean Tatar
+    sub i by i.TRK;
+} locl;
+
+feature ordn { # Ordinals
+ # DEFAULT
+lookup ordn10 {
+    sub @ordn1 [O o O.sc]' by [ordmasculine ordmasculine ordmasculine];
+    sub @ordn1 [A a A.sc]' by [ordfeminine ordfeminine ordfeminine];
+} ordn10;
+lookup ordn11 {
+    sub N O by numero;
+    sub N o by numero;
+    sub N O.sc by numero;
+    sub N ordmasculine by numero;
+    sub N degree by numero;
+    sub n O by numero;
+    sub n o by numero;
+    sub n O.sc by numero;
+    sub n ordmasculine by numero;
+    sub n degree by numero;
+    sub N.sc O by numero;
+    sub N.sc o by numero;
+    sub N.sc O.sc by numero;
+    sub N.sc ordmasculine by numero;
+    sub N.sc degree by numero;
+} ordn11;
+lookup ordn12 {
+    sub @ordn2 by @ordn3;
+} ordn12;
+ script latn; # Latin
+lookup ordn10;
+lookup ordn11;
+lookup ordn12;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ordn;
+
+feature frac { # Fractions
+ # DEFAULT
+lookup frac13 {
+    sub @frac3 by @frac4;
+} frac13;
+lookup frac14 {
+    sub [fraction onehalf onequarter threequarters] @frac1' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+    sub @frac2 @frac1' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
+} frac14;
+ script latn; # Latin
+lookup frac13;
+lookup frac14;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} frac;
+
+feature numr { # Numerators
+ # DEFAULT
+    sub @numr1 by @frac1;
+ script latn; # Latin
+    sub @numr1 by @frac1;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} numr;
+
+feature dnom { # Denominators
+ # DEFAULT
+    sub @numr1 by @frac2;
+ script latn; # Latin
+    sub @numr1 by @frac2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} dnom;
+
+feature sups { # Superscript
+ # DEFAULT
+    sub @sups1 by @sups2;
+ script latn; # Latin
+    sub @sups1 by @sups2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} sups;
+
+feature sinf { # Scientific Inferiors
+ # DEFAULT
+    sub @sinf1 by @sinf2;
+ script latn; # Latin
+    sub @sinf1 by @sinf2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} sinf;
+
+feature tnum { # Tabular Figures
+ # DEFAULT
+    sub @tnum1 by @tnum2;
+ script latn; # Latin
+    sub @tnum1 by @tnum2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} tnum;
+
+feature pnum { # Proportional Figures
+ # DEFAULT
+    sub @tnum2 by @tnum1;
+ script latn; # Latin
+    sub @tnum2 by @tnum1;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} pnum;
+
+feature lnum { # Lining Figures
+ # DEFAULT
+    sub @lnum1 by @lnum2;
+ script latn; # Latin
+    sub @lnum1 by @lnum2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} lnum;
+
+feature onum { # Oldstyle Figures
+ # DEFAULT
+    sub @lnum2 by @lnum1;
+ script latn; # Latin
+    sub @lnum2 by @lnum1;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} onum;
+
+feature zero { # Slashed Zero
+ # DEFAULT
+    sub [zero zero.OP zero.LT zero.LP] by [zero.slash zero.slash.OP zero.slash.LT zero.slash.LP];
+ script latn; # Latin
+    sub [zero zero.OP zero.LT zero.LP] by [zero.slash zero.slash.OP zero.slash.LT zero.slash.LP];
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} zero;
+
+feature c2sc { # Small Capitals From Capitals
+ # DEFAULT
+lookup c2sc24 {
+    sub @c2sc1 by @c2sc2;
+} c2sc24;
+lookup c2sc25 {
+    sub @c2sc3 by @c2sc4;
+} c2sc25;
+ script latn; # Latin
+lookup c2sc24;
+lookup c2sc25;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} c2sc;
+
+feature smcp { # Small Capitals
+ # DEFAULT
+lookup smcp26 {
+    sub @smcp1 by @smcp2;
+} smcp26;
+lookup smcp27 {
+    sub @smcp3 by @smcp4;
+} smcp27;
+ script latn; # Latin
+lookup smcp26;
+lookup smcp27;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} smcp;
+
+feature case { # Case-Sensitive Forms
+ # DEFAULT
+    sub @case1 by @case2;
+ script latn; # Latin
+    sub @case1 by @case2;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} case;
+
+feature hist { # Historical Forms
+ # DEFAULT
+    sub s' @hist1 by longs;
+ script latn; # Latin
+    sub s' @hist1 by longs;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} hist;
+
+feature liga { # Standard Ligatures
+ # DEFAULT
+    sub f f b by f_f_b;
+    sub f f h by f_f_h;
+    sub f f i by f_f_i;
+    sub f f j by f_f_j;
+    sub f f k by f_f_k;
+    sub f f l by f_f_l;
+    sub f f t by f_f_t;
+    sub f b by f_b;
+    sub f f by f_f;
+    sub f h by f_h;
+    sub f i by fi;
+    sub f j by f_j;
+    sub f k by f_k;
+    sub f l by fl;
+    sub f t by f_t;
+ script latn; # Latin
+    sub f f b by f_f_b;
+    sub f f h by f_f_h;
+    sub f f i by f_f_i;
+    sub f f j by f_f_j;
+    sub f f k by f_f_k;
+    sub f f l by f_f_l;
+    sub f f t by f_f_t;
+    sub f b by f_b;
+    sub f f by f_f;
+    sub f h by f_h;
+    sub f i by fi;
+    sub f j by f_j;
+    sub f k by f_k;
+    sub f l by fl;
+    sub f t by f_t;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} liga;
+
+feature dlig { # Discretionary Ligatures
+ # DEFAULT
+    sub T h by T_h;
+    sub c t by c_t;
+    sub s t by s_t;
+ script latn; # Latin
+    sub T h by T_h;
+    sub c t by c_t;
+    sub s t by s_t;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} dlig;
+
+feature ss01 { # Stylistic Set 1
+ # DEFAULT
+    sub @_a1 by @ss011;
+ script latn; # Latin
+    sub @_a1 by @ss011;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ss01;
+
+feature salt { # Stylistic Alternates
+ # DEFAULT
+lookup salt32 {
+    sub @_a1 by @ss011;
+} salt32;
+lookup salt34 {
+    sub @_g by [g.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt];
+} salt34;
+lookup salt35 {
+    sub [l lacute lcaron lcommaaccent] by [l.alt lacute.alt lcaron.alt lcommaaccent.alt];
+    sub [lslash ldot fl f_f_l] by [lslash.alt ldot.alt fl.alt f_f_l.alt];
+} salt35;
+ script latn; # Latin
+lookup salt32;
+lookup salt34;
+lookup salt35;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} salt;
+
+feature swsh { # Swash
+ # DEFAULT
+lookup swsh32 {
+    sub @_a1 by @ss011;
+} swsh32;
+lookup swsh35 {
+    sub [l lacute lcaron lcommaaccent] by [l.alt lacute.alt lcaron.alt lcommaaccent.alt];
+    sub [lslash ldot fl f_f_l] by [lslash.alt ldot.alt fl.alt f_f_l.alt];
+} swsh35;
+ script latn; # Latin
+lookup swsh32;
+lookup swsh35;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} swsh;
+
+feature ss02 { # Stylistic Set 2
+ # DEFAULT
+    sub @ss021 by @ss022;
+ script latn; # Latin
+    sub @ss021 by @ss022;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ss02;
+
+feature titl { # Titling
+ # DEFAULT
+    sub @ss021 by @ss022;
+ script latn; # Latin
+    sub @ss021 by @ss022;
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} titl;
+
+feature ss03 { # Stylistic Set 3
+ # DEFAULT
+    sub @_g by [g.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt];
+ script latn; # Latin
+    sub @_g by [g.alt gcircumflex.alt gbreve.alt gdotaccent.alt gcommaaccent.alt];
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ss03;
+
+feature ss04 { # Stylistic Set 4
+ # DEFAULT
+    sub [l lacute lcaron lcommaaccent] by [l.alt lacute.alt lcaron.alt lcommaaccent.alt];
+    sub [lslash ldot fl f_f_l] by [lslash.alt ldot.alt fl.alt f_f_l.alt];
+ script latn; # Latin
+    sub [l lacute lcaron lcommaaccent] by [l.alt lacute.alt lcaron.alt lcommaaccent.alt];
+    sub [lslash ldot fl f_f_l] by [lslash.alt ldot.alt fl.alt f_f_l.alt];
+ language AZE ; # Azeri
+ language TRK ; # Turkish
+ language MOL ; # Moldavian
+ language ROM ; # Romanian
+ language CRT ; # Crimean Tatar
+} ss04;
+
