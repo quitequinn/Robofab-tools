@@ -31,6 +31,9 @@ if len(listOne) == len(listTwo):
 else:
 	print "Can't run. Lists are not equal."
 
+for i in listTwo:
+    f.removeGlyph(i)
+    
 print ''
 print 'Digested by Python.'
 #exemption = 'zero.tzero'
